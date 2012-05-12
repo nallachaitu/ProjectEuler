@@ -7,7 +7,7 @@ public class largestPrimeFactor
 		long i = 2;
 		if(num == 1 || num == 0)
 			return false;
-		for(;i<num/2;i++)
+		for(;i<=num/2;i++)
 		{
 			if(num % i == 0)
 				return false;

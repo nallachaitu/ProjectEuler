@@ -91,7 +91,7 @@ public class firstTriNumber
 	public static void main(String[] args)
 	{
 		firstTriNumber testClass = new firstTriNumber();
-		long result = testClass.getTriNum(5);
+		long result = testClass.getTriNum(500);
 		System.out.println("required Number : " + result);
 	}
 

@@ -69,7 +69,7 @@ public class firstTriNumber
 	public int getDivisorsCount(long num,boolean[] primes)
 	{
 		int i;
-		int flag = 0;
+		boolean flag = false;
 		int exp = 0;
 		int count = 1;
 		for(i=2;i<primes.length && !flag;i++)
@@ -77,12 +77,12 @@ public class firstTriNumber
 			if(primes[i])
 			{
 				if(num / i ==0)
-					flag=1;
+					flag=true;
 				exp = getExponent(num , i);
 				count *= (exp+1);
 			}
 		}
-		if(flag == 1)
+		if(flag)
 		{
 			return count;	
 		}
